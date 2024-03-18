@@ -1,20 +1,21 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+//  import task view
+import TodoListView from "./views/TodoListView.vue";
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div id="tasks">
+    <TodoListView />
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
+#tasks{
+  background-color: rgb(0, 0, 0);
+  padding:32px;
+  border-radius: 20px;
+
+}
 .logo {
   height: 6em;
   padding: 1.5em;
