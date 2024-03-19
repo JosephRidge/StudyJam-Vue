@@ -19,6 +19,12 @@ const router = createRouter(
             path:'/tasks',
             name:'task',
             component:TodoListView
+          },
+          // handling wrong router
+          {
+            path:"/:pathMatch(.*)*",
+            name:"NotFound",
+            component:HomePageView
           }
         ]
 
